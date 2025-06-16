@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você decide o futuro da IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-effect"></div>
+    <div class="particles"></div>
+    
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-btn red"></span>
+                    <span class="terminal-btn yellow"></span>
+                    <span class="terminal-btn green"></span>
+                </div>
+                <span class="terminal-title">IA_FUTURO.EXE</span>
+            </div>
+            
+            <div class="terminal-body">
+                <h1 class="game-title animate__animated animate__fadeInDown">
+                    <span class="title-highlight">></span> VOCÊ DECIDE O FUTURO DA IA
+                </h1>
+                
+                <div class="tela-inicial animate__animated animate__fadeIn">
+                    <div class="typewriter">
+                        <p class="intro-text">
+                            <span class="text-highlight">[SISTEMA INICIADO]</span><br><br>
+                            Novembro de 2022 marcou o ponto de inflexão.<br>
+                            As máquinas alcançaram a singularidade.<br><br>
+                            Agora, em 2049, a fronteira entre humano e IA se dissolve.<br>
+                            Suas decisões moldarão o futuro desta coexistência.<br><br>
+                            <span class="blink">_</span>
+                        </p>
+                    </div>
+                    <button class="neon-btn iniciar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        INICIAR SIMULAÇÃO
+                    </button>
+                </div>
+                
+                <div class="caixa-perguntas"></div>
+                
+                <div class="caixa-alternativas"></div>
+                
+                <div class="caixa-resultado">
+                    <div class="resultado-container">
+                        <p class="texto-resultado"></p>
+                    </div>
+                    <button class="neon-btn novamente-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        REINICIAR SIMULAÇÃO
+                    </button>
+                </div>
+            </div>
+            
+            <div class="terminal-footer">
+                <div class="scanline"></div>
+                <div class="status-bar">
+                    <span class="status-text">STATUS: AGUARDANDO INPUT</span>
+                    <span class="status-date" id="current-date"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="hover-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-sci-fi-click-ui-259.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-quick-jump-arcade-game-239.mp3" preload="auto"></audio>
+
+    <script type="module" src="js/aleatorio.js"></script>
+    <script type="module" src="js/perguntas.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
